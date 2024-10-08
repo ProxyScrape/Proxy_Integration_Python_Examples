@@ -13,7 +13,7 @@ async def fetch(session, url, proxy):
 
 async def main():
     url = "http://httpbin.org/ip"
-    proxy = "http://apvx45n24g1q810:32cp09nenvb27c2@rp.proxyscrape.com:6060"
+    proxy = "http://@rp.proxyscrape.com:6060"
 
     async with aiohttp.ClientSession() as session:
         # Create a list of tasks
