@@ -2,8 +2,8 @@ import httpx
 
 def sync_request_with_proxy():
     proxies = {
-        "http://": "http://@rp.proxyscrape.com:6060",
-        "https://": "http://@rp.proxyscrape.com:6060"
+        "http://": "@rp.proxyscrape.com:6060",
+        "https://": "@rp.proxyscrape.com:6060"
     }
 
     with httpx.Client(proxies=proxies) as client:

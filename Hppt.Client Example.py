@@ -1,7 +1,7 @@
 import http.client
 
 def make_request_via_proxy():
-    proxy_host = 'Proxy IP'
+    proxy_host = 'your_proxy_ip'
     proxy_port = 3128
 
     conn = http.client.HTTPConnection(proxy_host, proxy_port)
