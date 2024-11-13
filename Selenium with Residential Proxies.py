@@ -26,7 +26,6 @@ if proxy_username and proxy_password:
 # Initialize the driver with Chrome options
 driver = webdriver.Chrome(options=chrome_options)
 
-# Visit a website
 driver.get("https://httpbin.org/ip")  # This site returns your IP address, useful for testing the proxy
 
 # Print page source for testing (shows the proxy IP if successful)

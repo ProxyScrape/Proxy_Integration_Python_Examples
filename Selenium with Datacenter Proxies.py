@@ -17,7 +17,6 @@ chrome_options.add_argument(f'--proxy-server=http://{proxy}')
 # Set up the WebDriver with the configured options
 driver = webdriver.Chrome(options=chrome_options)
 
-# Test the proxy by visiting a website
 driver.get("http://httpbin.org/ip")  # This site shows the IP address used for the request
 
 # Print the page source to check the proxy IP
