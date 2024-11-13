@@ -3,8 +3,8 @@ from selenium.webdriver.chrome.options import Options
 
 # Proxy setup
 proxy_address = "rp.proxyscrape.com:6060"
-proxy_username = "your_proxy_username"  # if authentication is required
-proxy_password = "your_proxy_password"  # if authentication is required
+proxy_username = "your_proxy_username"
+proxy_password = "your_proxy_password"
 
 # Chrome options setup
 chrome_options = Options()
@@ -26,9 +26,8 @@ if proxy_username and proxy_password:
 # Initialize the driver with Chrome options
 driver = webdriver.Chrome(options=chrome_options)
 
-driver.get("https://httpbin.org/ip")  # This site returns your IP address, useful for testing the proxy
+driver.get("https://httpbin.org/ip")
 
 print(driver.page_source)
 
-# Close the driver after test
 driver.quit()

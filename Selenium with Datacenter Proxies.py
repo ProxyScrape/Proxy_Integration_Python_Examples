@@ -6,7 +6,7 @@ proxy = "156.228.179.167:3128"
 
 # Chrome options for headless browsing
 chrome_options = Options()
-chrome_options.add_argument("--headless")  # Enable headless mode
+chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
@@ -19,7 +19,6 @@ driver = webdriver.Chrome(options=chrome_options)
 
 driver.get("http://httpbin.org/ip")  # This site shows the IP address used for the request
 
-# Print the page source to check the proxy IP
 print(driver.page_source)
 
 driver.quit()
