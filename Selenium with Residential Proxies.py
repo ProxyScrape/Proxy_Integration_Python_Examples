@@ -28,7 +28,6 @@ driver = webdriver.Chrome(options=chrome_options)
 
 driver.get("https://httpbin.org/ip")  # This site returns your IP address, useful for testing the proxy
 
-# Print page source for testing (shows the proxy IP if successful)
 print(driver.page_source)
 
 # Close the driver after test

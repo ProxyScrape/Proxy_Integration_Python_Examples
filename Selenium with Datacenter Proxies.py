@@ -21,6 +21,5 @@ driver.get("http://httpbin.org/ip")  # This site shows the IP address used for t
 
 # Print the page source to check the proxy IP
 print(driver.page_source)
-if __name__ == '__main__':
 
-    driver.quit()
+driver.quit()
