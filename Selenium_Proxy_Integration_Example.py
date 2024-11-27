@@ -32,8 +32,6 @@ driver = webdriver.Chrome(service=service, seleniumwire_options=sw_options, opti
 # Access target website
 driver.get('https://ssl-judge2.api.proxyscrape.com/')
 
-# Close the browser
-
 # Example: Extract the IP from the response
 response = driver.page_source
 
@@ -42,7 +40,7 @@ your_ip: str = re.search("HTTP_X_FORWARDED_FOR = (\d+\.)+\d+", response)
 print("Response:", response)
 print("Your IP is:", re.search("HTTP_X_FORWARDED_FOR = (\d+\.)+\d+", response).group().split("=")[-1])
 
-
+# quit the browser instance
 driver.quit()
 
 
