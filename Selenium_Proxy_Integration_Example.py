@@ -36,7 +36,6 @@ driver.get('https://ssl-judge2.api.proxyscrape.com/')
 response = driver.page_source
 
 # using simple regex to parse origin ip
-your_ip: str = re.search("HTTP_X_FORWARDED_FOR = (\d+\.)+\d+", response)
 print("Response:", response)
 print("Your IP is:", re.search("HTTP_X_FORWARDED_FOR = (\d+\.)+\d+", response).group().split("=")[-1])
 
