@@ -2,8 +2,8 @@ import requests
 
 # Configure the proxy
 proxies = {
-    "http://": "http://@rp.proxyscrape.com:6060",
-    "https://": "http://@rp.proxyscrape.com:6060"
+    "http://": "http://156.228.179.167:3128",
+    "https://": "http://156.228.179.167:3128"
 }
 
 url = 'http://httpbin.org/ip'
