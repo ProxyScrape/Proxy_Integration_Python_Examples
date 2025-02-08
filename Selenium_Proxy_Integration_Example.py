@@ -8,14 +8,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Proxy server credentials and host information
 proxy_address = "rp.proxyscrape.com:6060"
-proxy_username = "your_proxy_username"
-proxy_password = "your_proxy_password"
+proxy_username = "apvx45n24g1q810"
+proxy_password = "4flc1xnw9aygfrm"
 
 # Selenium Wire proxy configuration
 sw_options = {
     'proxy': {
-        'http': f'http://{proxy_username}:{proxy_password}@{proxy_address}',
-        'https': f'https://{proxy_username}:{proxy_password}@{proxy_address}',
+        'http': f'http://156.228.86.29:3128',
+        'https': f'https://156.228.86.29:3128',
     }
 }
 
